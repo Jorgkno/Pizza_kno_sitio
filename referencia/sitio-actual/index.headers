@@ -1,0 +1,7 @@
+HTTP/2 200 
+date: Fri, 13 Nov 2026 21:40:46 GMT
+content-type: text/html; charset=utf-8
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Next-Url, X-Vinext-Interception-Context, X-Vinext-Mounted-Slots, X-Vinext-Rsc-Render-Mode
+server: cloudflare
+cf-ray: a5a0efca197d3897-IAD
+
