@@ -1,0 +1,24 @@
+{
+  "name": "knos-chatgpt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/dev.mjs",
+    "build": "tsc -b && vite build",
+    "test": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "puppeteer-core": "^25.17.0",
+    "typescript": "~5.7.3",
+    "vite": "^6.2.0"
+  }
+}

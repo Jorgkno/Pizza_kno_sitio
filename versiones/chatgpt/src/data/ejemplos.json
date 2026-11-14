@@ -1,0 +1,54 @@
+[
+  {
+    "sample": true,
+    "id": 1,
+    "day": 14,
+    "month": 10,
+    "year": 2026,
+    "type": "popup",
+    "title": "Un sábado para compartir",
+    "place": "Patio de temporada · sede por confirmar",
+    "time": "13:00",
+    "end": "19:00",
+    "description": "Pizza recién hecha, ingredientes de temporada y muchas ganas de encontrarnos. Una muestra de cómo se verán tus próximos pop-ups."
+  },
+  {
+    "sample": true,
+    "id": 2,
+    "day": 20,
+    "month": 10,
+    "year": 2026,
+    "type": "collab",
+    "title": "Pizza & vino",
+    "place": "Cocina invitada · sede por confirmar",
+    "time": "19:00",
+    "end": "23:00",
+    "description": "Una colaboración para descubrir sabores y conocer a quienes están detrás de cada plato. La ubicación y el menú se publicarán al confirmar el evento."
+  },
+  {
+    "sample": true,
+    "id": 3,
+    "day": 28,
+    "month": 10,
+    "year": 2026,
+    "type": "popup",
+    "title": "Sábado de pizza",
+    "place": "Jardín de temporada · sede por confirmar",
+    "time": "10:00",
+    "end": "15:00",
+    "description": "Sobremesas sin prisa y una cocina para disfrutar juntos. Este evento es una muestra; aún no está abierto al público."
+  },
+  {
+    "sample": true,
+    "id": 4,
+    "day": 5,
+    "month": 11,
+    "year": 2026,
+    "type": "collab",
+    "title": "La última pizza del año",
+    "place": "Espacio colaborador · sede por confirmar",
+    "time": "18:00",
+    "end": "22:00",
+    "description": "Un encuentro para cerrar el año alrededor de la mesa. Evento de muestra, pendiente de fecha y sede reales."
+  }
+]
