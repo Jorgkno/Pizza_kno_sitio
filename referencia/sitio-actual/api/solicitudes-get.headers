@@ -1,0 +1,7 @@
+HTTP/2 405 
+date: Fri, 13 Nov 2026 21:40:52 GMT
+content-length: 0
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Next-Url, X-Vinext-Interception-Context, X-Vinext-Mounted-Slots, X-Vinext-Rsc-Render-Mode
+server: cloudflare
+cf-ray: a5a0eff0bf4f5ceb-IAD
+
