@@ -5,6 +5,8 @@ Todo el texto de la interfaz va en español (es-MX).
 
 El sitio que está en línea es [mesa-calendario-catering.jdelsol-91.chatgpt.site](https://mesa-calendario-catering.jdelsol-91.chatgpt.site). No tenemos su código fuente. La referencia de comportamiento, textos y contratos está en `referencia/sitio-actual/` y en `docs/`.
 
+El sitio en vivo no tiene CORS: el navegador bloquea las llamadas a su API desde otro dominio. En local, la versión grok consulta esa API a través de un proxy.
+
 ## Las tres versiones
 
 La idea es juntar después lo mejor de tres frentes en una sola versión final.
