@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Consulta nuestra agenda, descubre pop-ups y colaboraciones y solicita catering para tu próxima celebración."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Kno’s Pizzas · Calendario, catering y pop-ups</title>
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="Kno’s Pizzas, inicio">
+          <span class="brand-name">Kno’s<span class="mark" aria-hidden="true">✳</span></span>
+          <small>PIZZAS · CATERING &amp; POP-UPS</small>
+        </a>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menú
+        </button>
+        <nav id="site-nav" aria-label="Secciones">
+          <a href="#calendario" data-nav="calendario">Calendario</a>
+          <a href="#encuentros" data-nav="encuentros">Pop-ups &amp; colaboraciones</a>
+          <button type="button" class="btn primary nav-book" id="nav-book">
+            Planeemos tu evento
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">SIEMPRE HAY ALGO COCINÁNDOSE</p>
+          <h1 id="hero-title">Pop-ups &amp; <em>colaboraciones.</em></h1>
+          <p class="lede">Pizza para compartir. Descubre dónde nos encontramos.</p>
+          <p class="lede quiet">Celebraciones, equipos y momentos que merecen buena comida.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#encuentros">Ver próximas fechas</a>
+            <button type="button" class="btn ghost" id="hero-book">Solicitar catering</button>
+          </div>
+          <a class="text-link" href="#calendario">Ver semana y agendar catering</a>
+        </div>
+        <aside class="hero-aside" aria-hidden="true">
+          <p class="hero-mark">✳</p>
+          <p>Kno’s</p>
+          <p>Monterrey</p>
+        </aside>
+      </section>
+
+      <section class="events" id="encuentros" aria-labelledby="encounters-title">
+        <div class="section-intro">
+          <h2 id="encounters-title">Próximos pop-ups y colaboraciones</h2>
+        </div>
+        <p id="events-status" role="status">Cargando encuentros…</p>
+        <div class="event-list" id="event-list"></div>
+        <p class="sample-note" id="sample-note" hidden></p>
+      </section>
+
+      <section class="experiencia" id="experiencia" aria-labelledby="experiencia-titulo">
+        <div class="section-intro">
+          <p class="eyebrow">PIZZAS · CATERING &amp; POP-UPS</p>
+          <h2 id="experiencia-titulo">Momentos para quedarse.</h2>
+        </div>
+        <div class="slots">
+          <figure>
+            <div class="slot" role="img" aria-label="Espacio para fotografía, sin imagen"></div>
+            <figcaption>Sin fotografía</figcaption>
+          </figure>
+          <figure>
+            <div class="slot" role="img" aria-label="Espacio para fotografía, sin imagen"></div>
+            <figcaption>Sin fotografía</figcaption>
+          </figure>
+          <figure>
+            <div class="slot" role="img" aria-label="Espacio para fotografía, sin imagen"></div>
+            <figcaption>Sin fotografía</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="calendar-block" id="calendario" aria-labelledby="week-title">
+        <div class="calendar-head">
+          <div>
+            <p class="eyebrow">TU PRÓXIMA PIZZA YA TIENE FECHA</p>
+            <h2 id="week-title">Vista por semana</h2>
+            <p id="week-range" aria-live="polite">Consultando…</p>
+          </div>
+          <div class="pager" aria-label="Navegación de la semana">
+            <button type="button" id="week-prev" aria-label="Semana anterior" disabled>Anterior</button>
+            <button type="button" id="week-next" aria-label="Semana siguiente" disabled>Siguiente</button>
+            <button type="button" class="today" id="week-today" disabled>Hoy</button>
+          </div>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar calendarios" id="filters">
+          <button type="button" data-filter="all" aria-pressed="true" class="selected">Todo</button>
+          <button type="button" data-filter="catering" aria-pressed="false"><i class="swatch swatch-catering" aria-hidden="true"></i><span>Catering</span></button>
+          <button type="button" data-filter="popup" aria-pressed="false"><i class="swatch swatch-popup" aria-hidden="true"></i><span>Pop-ups</span></button>
+          <button type="button" data-filter="collab" aria-pressed="false"><i class="swatch swatch-collab" aria-hidden="true"></i><span>Colaboraciones</span></button>
+        </div>
+        <p id="week-status" role="status">Consultando…</p>
+        <div class="week-list" id="week-list" aria-label="Calendario semanal"></div>
+        <p class="legend">
+          <span><i class="swatch swatch-popup" aria-hidden="true"></i> Pop-up</span>
+          <span><i class="swatch swatch-collab" aria-hidden="true"></i> Colaboración</span>
+          <span>Catering sujeto a confirmación</span>
+        </p>
+      </section>
+
+      <section class="calendar-block month-block" id="vista-mes" aria-labelledby="month-title">
+        <div class="section-intro">
+          <p class="eyebrow">EXPLORA TODAS LAS FECHAS</p>
+          <h2 id="month-title">Vista por mes</h2>
+        </div>
+        <div class="calendar-head">
+          <h3 id="month-label">Consultando…</h3>
+          <div class="pager" aria-label="Navegación del mes">
+            <button type="button" id="month-prev" aria-label="Mes anterior" disabled>Anterior</button>
+            <button type="button" id="month-next" aria-label="Mes siguiente" disabled>Siguiente</button>
+            <button type="button" class="today" id="month-today" disabled>Hoy</button>
+          </div>
+        </div>
+        <p id="month-status" role="status">Consultando…</p>
+        <div class="month-frame" id="month-frame" hidden>
+          <div class="weekdays" aria-hidden="true">
+            <span>LUN</span><span>MAR</span><span>MIÉ</span><span>JUE</span><span>VIE</span><span>SÁB</span><span>DOM</span>
+          </div>
+          <div class="month-grid" id="month-grid"></div>
+        </div>
+        <div class="legend">
+          <span><i class="swatch swatch-popup" aria-hidden="true"></i> Pop-ups</span>
+          <span><i class="swatch swatch-collab" aria-hidden="true"></i> Colaboraciones</span>
+          <span><i class="swatch swatch-catering" aria-hidden="true"></i> Solicitar catering</span>
+          <span><i class="swatch swatch-reserved" aria-hidden="true"></i> Reservado</span>
+        </div>
+        <p class="sample-note">Las fechas de catering se confirman después de revisar tu solicitud.</p>
+      </section>
+
+      <section class="banner" aria-labelledby="banner-title">
+        <span class="banner-mark" aria-hidden="true">✳</span>
+        <div>
+          <p class="eyebrow">NOSOTROS LLEVAMOS LAS PIZZAS</p>
+          <h2 id="banner-title">Tú pones el motivo.</h2>
+          <p>Celebraciones, equipos y momentos que merecen buena comida.</p>
+        </div>
+        <button type="button" class="btn primary" id="banner-book">Cuéntanos tu idea</button>
+      </section>
+    </main>
+
+    <footer>
+      <a class="footer-brand" href="/">Kno’s Pizzas✳</a>
+      <span>Pizza para compartir. Momentos para quedarse.</span>
+      <a href="https://mesa-calendario-catering.jdelsol-91.chatgpt.site/gestion">Gestionar agenda ↗</a>
+    </footer>
+
+    <dialog id="event-dialog" aria-labelledby="event-dialog-title">
+      <div class="dialog-sheet" id="event-sheet"></div>
+    </dialog>
+
+    <dialog id="catering-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-sheet" id="catering-sheet"></div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" hidden></div>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
